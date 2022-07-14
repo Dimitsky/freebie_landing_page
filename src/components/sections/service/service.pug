@@ -1,0 +1,21 @@
+section(class="service")
+    div(class="container service__container")
+        div(class="layout service__layout")
+            h2(class="h h--2 service__h") Best <span class="colored">Services</span>
+            p(class="p service__p") Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.
+            ul(class="service__list list-service")
+                each item, index in serviceList
+                    li(class="list-service__item" style=`background: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), no-repeat center / cover url('${item.src}');` + ( ( index + 1 ) > serviceVisible ? " display: none" : "" ) )
+                        h3(class="h h--3 list-service__h")= item.title
+                        p(class="rate list-service__rate rate-list-service")
+                            svg(class="rate-list-service__icon" + ( item.rate >= 1 ? " rate-list-service__icon--active" : "" ) width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+                            svg(class="rate-list-service__icon" + ( item.rate >= 2 ? " rate-list-service__icon--active" : "" ) width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+                            svg(class="rate-list-service__icon" + ( item.rate >= 3 ? " rate-list-service__icon--active" : "" ) width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+                            svg(class="rate-list-service__icon" + ( item.rate >= 4 ? " rate-list-service__icon--active" : "" ) width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+                            svg(class="rate-list-service__icon" + ( item.rate == 5 ? " rate-list-service__icon--active" : "" ) width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+            button(class="btn service__all" id="explore-all" type="button") Explore All
