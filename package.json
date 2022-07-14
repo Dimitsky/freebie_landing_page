@@ -1,0 +1,25 @@
+{
+  "name": "worku_-_landing_page",
+  "version": "1.0.0",
+  "description": "Ссылки\r - [Макет в figma](https://www.figma.com/community/file/1016279915990310020)\r - [Пример живой страницы](https://dimoncss.ru/myworks/freebie/)",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.3",
+    "gulp-cli": "^2.3.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.53.0"
+  }
+}
