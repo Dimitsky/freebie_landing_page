@@ -1,1 +1,25 @@
 extends ../templates/layout.pug
+
+block variables
+    - 
+        let navList = [
+            {
+                inner: 'Home', 
+                href: "#", 
+            }, 
+            {
+                inner: 'About', 
+                href: "#", 
+            }, 
+            {
+                inner: 'Testimonials', 
+                href: "#", 
+            }, 
+            {
+                inner: 'Contact', 
+                href: "#", 
+            }, 
+        ];
+
+block header
+    include ../../sections/header/header.pug
