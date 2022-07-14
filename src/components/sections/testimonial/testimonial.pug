@@ -1,0 +1,43 @@
+section(class="testimonial")
+    div(class="container testimonial__container")
+        div(class="layout testimonial__layout")
+            h2(class="h h--2 testimonial__h") What Clients Say
+            p(class="p testimonial__p") Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.
+            div(class="swiper testimonial__swiper swiper-testimonial")
+                div(class="swiper-wrapper swiper-testimonial__wrapper")
+                    each item, index in testimonialList
+                        div(class="swiper-slide swiper-testimonial__slide slide-swiper-testimonial")
+                            div(class="slide-swiper-testimonial__img-wrapper")
+                                picture
+                                    source(
+                                        type="image/webp"
+                                        src=`assets/img/testimonial/i-${index + 1}.webp`
+                                    )
+                                    source(
+                                        type="image/jpg"
+                                        src=`assets/img/testimonial/i-${index + 1}.jpg`
+                                    )
+                                    img(class="slide-swiper-testimonial__img" src=`assets/img/testimonial/i-${index + 1}.jpg` alt="Client's photo")
+                                div(class="slide-swiper-testimonial__body")
+                                    h3(class="h h--3 slide-swiper-testimonial__h")= item.title
+                                    p(class="p slide-swiper-testimonial__text")= item.text
+                                    p(class="rate slide-swiper-testimonial__rate rate-slide-swiper-testimonial")
+                                        svg(class="rate__icon rate-slide-swiper-testimonial__icon" + ( item.rate >= 1 ? " rate__icon--active" : "" ) width="12" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+                                        svg(class="rate__icon rate-slide-swiper-testimonial__icon" + ( item.rate >= 2 ? " rate__icon--active" : "" ) width="12" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+                                        svg(class="rate__icon rate-slide-swiper-testimonial__icon" + ( item.rate >= 3 ? " rate__icon--active" : "" ) width="12" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+                                        svg(class="rate__icon rate-slide-swiper-testimonial__icon" + ( item.rate >= 4 ? " rate__icon--active" : "" ) width="12" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+                                        svg(class="rate__icon rate-slide-swiper-testimonial__icon" + ( item.rate == 5 ? " rate__icon--active" : "" ) width="12" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z")
+                                    span(class="slide-swiper-testimonial__name")= item.name
+                                    span(class="slide-swiper-testimonial__job")= item.job
+                div(class="swiper-testimonial__nav nav-swiper-testimonial")
+                    button(class="swiper-button-prev nav-swiper-testimonial__btn nav-swiper-testimonial__btn--prev" type="button")
+                        svg(width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M13 4H1M1 4L5.5 1M1 4L5.5 7" stroke="currentColor")
+                    button(class="swiper-button-next nav-swiper-testimonial__btn nav-swiper-testimonial__btn--next" type="button")
+                        svg(width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M0 4H12M12 4L7.5 1M12 4L7.5 7" stroke="currentColor")
