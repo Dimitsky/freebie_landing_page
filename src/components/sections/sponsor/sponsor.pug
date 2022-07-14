@@ -1,0 +1,6 @@
+section(class="sponsor")
+    div(class="container sponsor__container")
+        ul(class="layout sponsor__layout sponsor__list list-sponsor")
+            each item in logoList
+                li(class="list-sponsor__item")
+                    img(class="list-sponsor__img" src=`${item.src}`, alt="" aria-hidden="true")
