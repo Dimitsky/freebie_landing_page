@@ -1,0 +1,9 @@
+.link {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color .3s;
+
+    &:hover {
+        color: var(--color-hover);
+    }
+}

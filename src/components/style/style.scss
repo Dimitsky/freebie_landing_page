@@ -1,0 +1,50 @@
+@import '../fonts/fonts.scss';
+
+:root {
+    box-sizing: border-box;
+    color: var(--color-text);
+    font: 500 16px/1.48 'Gilroy', sans-serif;
+
+    --color-brand: #25A4AD;
+    --color-hover: pink;
+    --color-text: #313131;
+}
+
+*, 
+::after, 
+::before {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* UI */
+
+@import '../ui/btn/btn.scss';
+@import '../ui/link/link.scss';
+
+/* SECTIONS */
+
+@import '../sections/header/header.scss';
+
+/* COLORED */
+
+.colored {
+    color: var(--color-brand);
+}
+
+@media screen and ( max-width: 1023px ) {
+    :root {
+        font-size: 18px;
+    }
+}
