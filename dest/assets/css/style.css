@@ -118,7 +118,8 @@ img {
 
 @media screen and (max-width: 1023px) {
   .h--1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    line-height: 1.2;
   }
 }
 /* SECTIONS */
@@ -246,6 +247,9 @@ img {
   .hamburger.js {
     display: flex;
   }
+  .header {
+    background: none;
+  }
   .header__layout {
     display: block;
   }
@@ -254,6 +258,12 @@ img {
   }
   .nav-header__wrapper {
     display: block;
+  }
+  .nav-header__logo {
+    display: block;
+    max-width: 5em;
+    margin: auto;
+    text-align: center;
   }
   .nav-header__list {
     display: block;
@@ -317,26 +327,60 @@ img {
   text-align: center;
 }
 .hero__start {
-  margin-right: 1.39vw;
+  margin-right: 1.49vw;
   box-shadow: 0 30px 75px -10px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 1439px) {
+  .hero {
+    background: no-repeat 39.3% 5.8% url("../img/hero/bg-2.svg"), no-repeat 0% 41.6% url("../img/hero/bg-3.svg"), no-repeat 46.4% 41.5% url("../img/hero/bg-4.svg"), no-repeat 51.2% 75% url("../img/hero/bg-5.svg"), no-repeat 97% 82.7% url("../img/hero/bg-6.svg"), no-repeat 0% 92.5% url("../img/hero/bg-7.svg");
+  }
+}
 @media screen and (max-width: 1023px) {
   .hero {
     background: none;
   }
-  .hero__start, .hero__explore {
-    width: min(100%, 300px);
-    padding: 0.798em 0;
+  .hero__layout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero__h, .hero__p {
+    text-align: center;
   }
   .hero__start {
     margin-right: 0;
-    margin-bottom: 1.39vw;
+    margin-bottom: 3vw;
     box-shadow: none;
   }
   .hero__wrapper {
     display: flex;
     flex-direction: column;
+  }
+}
+.sponsor {
+  background: #F8F8F8;
+}
+.sponsor__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.sponsor__layout {
+  padding: 4.79vw 1.875vw 4.247vw;
+}
+
+@media screen and (max-width: 1023px) {
+  .sponsor__list {
+    flex-direction: column;
+  }
+  .list-sponsor__item {
+    margin-bottom: 3vw;
   }
 }
 /* COLORED */

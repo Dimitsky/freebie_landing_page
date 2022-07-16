@@ -29,8 +29,19 @@
     }
 
     &__start {
-        margin-right: 1.39vw;
+        margin-right: 1.49vw;
         box-shadow: 0 30px 75px -10px rgb(0 0 0 / 50%);
+    }
+}
+
+@media screen and ( max-width: 1439px ) {
+    .hero {
+        background: no-repeat 39.3% 5.8% url("../img/hero/bg-2.svg"), 
+                    no-repeat 0% 41.6% url("../img/hero/bg-3.svg"), 
+                    no-repeat 46.4% 41.5% url("../img/hero/bg-4.svg"), 
+                    no-repeat 51.2% 75% url("../img/hero/bg-5.svg"), 
+                    no-repeat 97% 82.7% url("../img/hero/bg-6.svg"), 
+                    no-repeat 0% 92.5% url("../img/hero/bg-7.svg");
     }
 }
 
@@ -38,15 +49,20 @@
     .hero {
         background: none;
 
-        &__start, 
-        &__explore {
-            width: min(100%, 300px);
-            padding: .798em 0;
+        &__layout {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__h, 
+        &__p {
+            text-align: center;
         }
 
         &__start {
             margin-right: 0;
-            margin-bottom: 1.39vw;
+            margin-bottom: 3vw;
             box-shadow: none;
         }
 

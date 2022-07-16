@@ -139,6 +139,8 @@
     }
 
     .header {
+        background: none;
+
         &__layout {
             display: block;
         }
@@ -151,6 +153,13 @@
     .nav-header {
         &__wrapper {
             display: block;
+        }
+
+        &__logo {
+            display: block;
+            max-width: 5em;
+            margin: auto;
+            text-align: center;
         }
 
         &__list {

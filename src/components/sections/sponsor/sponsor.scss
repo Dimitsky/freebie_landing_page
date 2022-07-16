@@ -1,0 +1,32 @@
+.sponsor {
+    background: #F8F8F8;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__layout {
+        padding: 4.79vw 1.875vw 4.247vw;
+    }
+}
+
+@media screen and ( max-width: 1023px ) {
+    .sponsor {
+        &__list {
+            flex-direction: column;
+        }
+    }
+    
+    .list-sponsor {
+        &__item {
+            margin-bottom: 3vw;
+        }
+    }
+}
