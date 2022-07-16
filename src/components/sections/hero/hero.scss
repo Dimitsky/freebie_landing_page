@@ -1,0 +1,58 @@
+.hero {
+    background: no-repeat 81% 16% url("../img/hero/bg-1.webp"), 
+                no-repeat 39.3% 5.8% url("../img/hero/bg-2.svg"), 
+                no-repeat 0% 41.6% url("../img/hero/bg-3.svg"), 
+                no-repeat 46.4% 41.5% url("../img/hero/bg-4.svg"), 
+                no-repeat 51.2% 75% url("../img/hero/bg-5.svg"), 
+                no-repeat 97% 82.7% url("../img/hero/bg-6.svg"), 
+                no-repeat 0% 92.5% url("../img/hero/bg-7.svg");
+
+    &__layout {
+        padding-top: 14.4vw;
+        padding-bottom: 12.66vw;
+    }
+
+    &__h {
+        max-width: 623px;
+        margin-bottom: 2.4vw;
+    }
+
+    &__p {
+        max-width: 426px;
+        margin-bottom: 2.85vw;
+    }
+
+    &__start, 
+    &__explore {
+        padding: .971em 3.199em;
+        text-align: center;
+    }
+
+    &__start {
+        margin-right: 1.39vw;
+        box-shadow: 0 30px 75px -10px rgb(0 0 0 / 50%);
+    }
+}
+
+@media screen and ( max-width: 1023px ) {
+    .hero {
+        background: none;
+
+        &__start, 
+        &__explore {
+            width: min(100%, 300px);
+            padding: .798em 0;
+        }
+
+        &__start {
+            margin-right: 0;
+            margin-bottom: 1.39vw;
+            box-shadow: none;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
