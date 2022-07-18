@@ -47,6 +47,7 @@
   --color-brand: #25A4AD;
   --color-hover: pink;
   --color-text: #313131;
+  --color-star: #F5B91E;
 }
 
 *,
@@ -107,17 +108,24 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 100;
+  line-height: 1;
 }
 .h .colored {
   font-weight: 600;
 }
 .h--1 {
   font-size: 6.25rem;
-  line-height: 1;
+}
+.h--2 {
+  font-size: 4.06rem;
+}
+.h--3 {
+  font-size: 2.25rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1023px) {
-  .h--1 {
+  .h--1, .h--2 {
     font-size: 2.3rem;
     line-height: 1.2;
   }
@@ -381,6 +389,109 @@ img {
   }
   .list-sponsor__item {
     margin-bottom: 3vw;
+  }
+}
+.service {
+  background: no-repeat top 87.8% left url("../img/service/bg-1.svg");
+}
+.service__layout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 9.4vw;
+  padding-bottom: 9.72vw;
+}
+.service__h {
+  margin-bottom: 2.3vw;
+  text-align: center;
+}
+.service__p {
+  max-width: 620px;
+  margin: 0 auto 5.7vw auto;
+  text-align: center;
+}
+.service__wrapper {
+  max-width: 1004px;
+  margin: 0 auto 8.3vw;
+}
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.39vw;
+  padding-left: 0;
+  list-style: none;
+}
+.service__all {
+  padding: 0.971em 3.558em;
+}
+
+.list-service__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 472px;
+  width: calc(50% - 2.78vw);
+  margin: 0px 1.39vw 2.78vw;
+}
+.list-service__item:nth-child(2n) {
+  transform: translateY(80px);
+}
+.list-service__item:nth-child(4n+1) {
+  clip-path: inset(0 0 0 0 round 50% 0 0 0);
+}
+.list-service__item:nth-child(4n+2) {
+  clip-path: inset(0 0 0 0 round 0 50% 0 0);
+}
+.list-service__item:nth-child(4n+3) {
+  clip-path: inset(0 0 0 0 round 0 0 0 50%);
+}
+.list-service__item:nth-child(4n+4) {
+  clip-path: inset(0 0 0 0 round 0 0 50% 0);
+}
+.list-service__h {
+  max-width: 7em;
+  margin-bottom: 1.4vw;
+  color: #fff;
+  text-align: center;
+}
+
+.rate-list-service__icon {
+  fill: gray;
+}
+.rate-list-service__icon--active {
+  fill: var(--color-star);
+}
+.rate-list-service__icon:not(:last-child) {
+  margin-right: 6.5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .service {
+    background: none;
+  }
+  .service__layout {
+    align-items: unset;
+  }
+  .service__wrapper {
+    max-width: unset;
+    margin: 0;
+  }
+  .service__list {
+    display: block;
+    margin: 0;
+  }
+  .service__all {
+    align-self: center;
+  }
+  .list-service__item {
+    width: unset;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .list-service__item:nth-child(n) {
+    clip-path: none;
+    transform: none;
   }
 }
 /* COLORED */

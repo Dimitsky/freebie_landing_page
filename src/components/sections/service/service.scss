@@ -1,0 +1,130 @@
+.service {
+    background: no-repeat top 87.8% left url("../img/service/bg-1.svg");
+
+    &__layout {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 9.4vw;
+        padding-bottom: 9.72vw;
+    }
+
+    &__h {
+        margin-bottom: 2.3vw;
+        text-align: center;
+    }
+
+    &__p {
+        max-width: 620px;
+        margin: 0 auto 5.7vw auto;
+        text-align: center;
+    }
+
+    &__wrapper {
+        max-width: 1004px;
+        margin: 0 auto 8.3vw;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1.39vw;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__all {
+        padding: .971em 3.558em;
+    }
+}
+
+.list-service {
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 472px;
+        width: calc(50% - 2.78vw);
+        margin: 0px 1.39vw 2.78vw;
+    }
+
+    &__item:nth-child(2n) {
+        transform: translateY(80px);
+    }
+
+    &__item:nth-child(4n+1) {
+        clip-path: inset(0 0 0 0 round 50% 0 0 0);
+    }
+
+    &__item:nth-child(4n+2) {
+        clip-path: inset(0 0 0 0 round 0 50% 0 0);
+    }
+
+    &__item:nth-child(4n+3) {
+        clip-path: inset(0 0 0 0 round 0 0 0 50%);
+    }
+
+    &__item:nth-child(4n+4) {
+        clip-path: inset(0 0 0 0 round 0 0 50% 0);
+    }
+
+    &__h {
+        max-width: 7em;
+        margin-bottom: 1.4vw;
+        color: #fff;
+        text-align: center;
+    }
+
+}
+
+.rate-list-service {
+    &__icon {
+        fill: gray;
+
+        &--active {
+            fill: var(--color-star);
+        }
+    }
+
+    &__icon:not(:last-child) {
+        margin-right: 6.5px;
+    }
+}
+
+@media screen and ( max-width: 1023px ) {
+    .service {
+        background: none;
+        
+        &__layout {
+            align-items: unset;
+        }
+
+        &__wrapper {
+            max-width: unset;
+            margin: 0;
+        }
+
+        &__list {
+            display: block;
+            margin: 0;
+        }
+
+        &__all {
+            align-self: center;
+        }
+    }
+
+    .list-service {
+        &__item {
+            width: unset;
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        &__item:nth-child(n) {
+            clip-path: none;
+            transform: none;
+        }
+    }
+}

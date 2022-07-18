@@ -8,6 +8,7 @@
     --color-brand: #25A4AD;
     --color-hover: pink;
     --color-text: #313131;
+    --color-star: #F5B91E;
 }
 
 *, 
@@ -40,6 +41,7 @@ img {
 @import '../sections/header/header.scss';
 @import '../sections/hero/hero.scss';
 @import '../sections/sponsor/sponsor.scss';
+@import '../sections/service/service.scss';
 
 /* COLORED */
 

@@ -2,6 +2,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 100;
+    line-height: 1;
 
     & .colored {
         font-weight: 600;
@@ -9,13 +10,22 @@
 
     &--1 {
         font-size: 6.25rem;
-        line-height: 1;
+    }
+
+    &--2 {
+        font-size: 4.06rem;
+    }
+
+    &--3 {
+        font-size: 2.25rem;
+        font-weight: 600;
     }
 }
 
 @media screen and ( max-width: 1023px ) {
     .h {
-        &--1 {
+        &--1, 
+        &--2 {
             font-size: 2.3rem;
             line-height: 1.2;
         }
