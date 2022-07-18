@@ -1,13 +1,18 @@
 section(class="feature")
-    div(class="container feature__container")
-        div(class="layout feature__layout")
-            h2(class="h h--2 feature__h") Our Features
+    div(class="container feature__container-top")
+        div(class="layout feature__layout-top")
+            h2(class="h h--2 feature__h") Our <span class="colored">Features</span>
             p(class="p feature__p") Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.
+    div(class="container feature__container-middle")
+        div(class="layout feature__layout-middle")
             div(class="swiper feature__swiper swiper-feature")
                 div(class="swiper-wrapper swiper-feature__wrapper")
                     each item in featureList
                         div(class="swiper-slide swiper-feature__slide slide-swiper-feature")
-                            h3(class="h slide-swiper-feature__h")= item.title
-                            p(class="p slide-swiper-feature__p")= item.text
-                            a(class="a slide-swiper-feature__more" href="#") Learn More
-            a(class="btn slide-swiper-feature__all" href="#") Explore All
+                            div(class="slide-swiper-feature__body")
+                                h3(class="h slide-swiper-feature__h")= item.title
+                                p(class="p slide-swiper-feature__p")= item.text
+                                a(class="a slide-swiper-feature__more" href="#") Learn More
+    div(class="container feature__container-bottom")
+        div(class="layout feature__layout-bottom")
+            a(class="btn feature__all" href="#") Explore All

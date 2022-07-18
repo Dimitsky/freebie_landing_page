@@ -42,6 +42,7 @@ img {
 @import '../sections/hero/hero.scss';
 @import '../sections/sponsor/sponsor.scss';
 @import '../sections/service/service.scss';
+@import '../sections/feature/feature.scss';
 
 /* COLORED */
 
@@ -52,5 +53,11 @@ img {
 @media screen and ( max-width: 1023px ) {
     :root {
         font-size: 18px;
+    }
+}
+
+@media screen and ( max-width: 1023px ) {
+    :root {
+        font-size: 16px;
     }
 }
