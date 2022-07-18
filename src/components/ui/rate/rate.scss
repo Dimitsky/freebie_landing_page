@@ -1,0 +1,9 @@
+.rate {
+    &__icon {
+        fill: gray;
+
+        &--active {
+            fill: var(--color-star);
+        }
+    }
+}

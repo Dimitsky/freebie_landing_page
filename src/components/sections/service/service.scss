@@ -79,14 +79,6 @@
 }
 
 .rate-list-service {
-    &__icon {
-        fill: gray;
-
-        &--active {
-            fill: var(--color-star);
-        }
-    }
-
     &__icon:not(:last-child) {
         margin-right: 6.5px;
     }
