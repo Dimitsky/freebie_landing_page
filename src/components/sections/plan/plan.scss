@@ -1,0 +1,144 @@
+.plan {
+    &__h {
+        margin-bottom: 9.4vw;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        margin: 0 -1.46vw;
+        padding-left: 0;
+        list-style: none;
+    }
+}
+
+.list-plan {
+    &__item {
+        position: relative;
+        width: 33.33%;
+        padding: 0 1.46vw 1.46vw;
+
+        &--colored {
+            transform: translateY(-50px);
+        }
+    }
+
+    &__body {
+        border: 1px solid #D8D8D8;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 3.2vw 2.92vw 3.4vw;
+        background: #fff;
+        transition: border-color .3s, box-shadow .3s;
+
+        &--colored {
+            border-color: #fff;
+            box-shadow: 0 30px 40px 0px rgba(0 0 0 / .1)
+        }
+    }
+
+    &__h, 
+    &__price {
+        text-align: center;
+        transition: color .3s;
+    }
+
+    &__h {
+        margin-bottom: 1.18vw;
+        font-size: 1.875rem;
+        font-weight: 600;
+        line-height: 1;
+
+        &--colored {
+            color: var(--color-brand);
+        }
+    }
+
+    &__price {
+        margin-bottom: 1.55vw;
+        font-size: 3.75rem;
+        font-weight: 700;
+        line-height: 1.17;
+
+        &--colored {
+            color: var(--color-brand);
+        }
+    }
+
+    &__feature {
+        margin-top: 0;
+        margin-bottom: 2.4vw;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__demo {
+        margin-top: auto;
+        padding: 1.027em 0;
+
+        &--colored {
+            color: #fff;
+            background: var(--color-brand);
+        }
+    }
+}
+
+.feature-list-plan {
+    &__item {
+        position: relative;
+        padding-left: max(2.4vw, 25px);
+
+        &::before {
+            content: url('../img/plan/check-common.svg');
+            position: absolute;
+            top: 0;
+            left: 0.49vw;
+        }
+
+        &--colored::before {
+            content: url('../img/plan/check-active.svg');
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 1.11vw;
+    }
+
+    &__p {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1;
+        transition: color .3s;
+
+        &--colored {
+            color: var(--color-brand);
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .plan {
+        &__list {
+            display: block;
+        }
+    }
+
+    .list-plan {
+        &__body {
+            box-shadow: none;
+        }
+
+        &__item {
+            width: unset;
+
+            &--colored {
+                transform: none;
+            }
+        }
+
+        &__feature {
+            align-self: center;
+        }
+    }
+}
