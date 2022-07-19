@@ -1,0 +1,70 @@
+.acc {
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.acc * {
+    box-sizing: inherit;
+}
+
+.acc__item:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.acc__control {
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em;
+    width: 100%;
+    background: darkgray;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.acc__title {
+    margin-right: 15px;
+}
+
+.acc__icon {
+    position: relative;
+    font-size: 2em;
+    line-height: 1;
+    transition: transform 200ms ease-in-out;
+    transform-origin: center;
+}
+
+.acc__icon--open {
+    transform: rotate(45deg);
+}
+
+.acc__icon::before {
+    content: '\002B';
+    display: block;
+}
+
+.acc__content {
+    box-sizing: content-box;
+    padding: .5em;
+    overflow: hidden;
+}
+
+.acc__content--js {
+    max-height: 0;
+    padding: 0 .5em;
+    transition: max-height 200ms ease-in-out, padding 200ms ease-in-out, visibility 0ms 200ms;
+    visibility: hidden;
+    will-change: max-height;
+}
+
+.acc__content--open {
+    padding: .5em;
+    transition: max-height 200ms ease-in-out, padding 200ms ease-in-out, visibility 0ms 0ms;
+    visibility: visible;
+}
