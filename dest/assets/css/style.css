@@ -934,7 +934,7 @@ img {
   }
 }
 .faq__layout {
-  margin-bottom: 9.72vw;
+  margin-bottom: 9.83vw;
 }
 .faq__acc {
   max-width: 706px;
@@ -1014,16 +1014,103 @@ img {
   padding: 0 8.2vw 4.09vw 6.8vw;
 }
 
+.footer {
+  background: no-repeat center/cover url("../img/footer/bg-1.jpg") #2c2c2c;
+}
+.footer__layout {
+  display: flex;
+  flex-direction: column;
+  padding-top: 11.8vw;
+  padding-bottom: 1.88vw;
+}
+.footer__h, .footer__demo, .footer__desc, .footer__subtitle, .footer__copy {
+  color: #fff;
+}
+.footer__h {
+  align-self: center;
+  max-width: 767px;
+  margin-bottom: 4.6vw;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.17;
+  text-align: center;
+}
+.footer__demo {
+  border-color: #fff;
+  margin-bottom: 12.5vw;
+  padding: 1.163em 2.4em;
+  align-self: center;
+}
+.footer__wrapper {
+  align-self: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1030px;
+  margin-bottom: 5.6vw;
+}
+.footer__box:nth-child(1) {
+  flex: 0 0 168px;
+  margin-right: 5vw;
+}
+.footer__box:nth-child(4) {
+  flex: 0 1 116px;
+}
+.footer__logo {
+  margin-bottom: 0.5vw;
+}
+.footer__desc {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.17;
+}
+.footer__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.footer__subtitle {
+  margin-bottom: 2.2vw;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.17;
+}
+.footer__copy {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.17;
+  align-self: center;
+}
+
+.list-footer__item:not(:last-child) {
+  margin-bottom: 1.2vw;
+}
+.list-footer__link {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.17;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+    width: unset;
+  }
+  .footer__box {
+    margin-bottom: 5vw;
+  }
+  .footer__box:nth-child(1) {
+    margin-right: 0;
+  }
+}
 /* COLORED */
 .colored {
   color: var(--color-brand);
 }
 
-@media screen and (max-width: 1023px) {
-  :root {
-    font-size: 18px;
-  }
-}
 @media screen and (max-width: 1023px) {
   :root {
     font-size: 16px;

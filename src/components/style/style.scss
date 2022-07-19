@@ -48,17 +48,12 @@ img {
 @import '../sections/testimonial/testimonial.scss';
 @import '../sections/plan/plan.scss';
 @import '../sections/faq/faq.scss';
+@import '../sections/footer/footer.scss';
 
 /* COLORED */
 
 .colored {
     color: var(--color-brand);
-}
-
-@media screen and ( max-width: 1023px ) {
-    :root {
-        font-size: 18px;
-    }
 }
 
 @media screen and ( max-width: 1023px ) {
