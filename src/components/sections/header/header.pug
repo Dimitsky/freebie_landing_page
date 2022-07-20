@@ -1,7 +1,7 @@
 header(class="header")
     div(class="container header__container")
         div(class="layout header__layout")
-            a(class="link nav-header__logo colored" href="index.html") Payme
+            a(class="link header__logo colored" href="index.html") Payme
             nav(class="header__nav nav-header" id="main-nav")
                 button(class="reset-button header__hamburger hamburger" id="trigger-menu" aria-expanded="false" aria-controls="main-menu" aria-label="Main menu" type="button")
                     span(class="hamburger__item")
@@ -9,6 +9,6 @@ header(class="header")
                     ul(class="nav-header__list")
                         each item in navList
                             li(class="nav-header__item")
-                                a(class="link nav-header__link" href=`${item.href}`)= item.inner
+                                a(class="a link nav-header__link" href=`${item.href}`)= item.inner
                     a(class="link nav-header__login nav-header__login--sign-in" href="#") Sign in
                     a(class="btn nav-header__login nav-header__login--sign-up" href="#") Sign up
