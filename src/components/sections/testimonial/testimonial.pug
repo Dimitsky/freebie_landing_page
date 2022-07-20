@@ -17,7 +17,7 @@ section(class="testimonial")
                                         type="image/jpg"
                                         srcset=`assets/img/testimonial/i-${index + 1}.jpg`
                                     )
-                                    img(class="slide-swiper-testimonial__img" src=`assets/img/testimonial/i-${index + 1}.jpg` alt="Client's photo")
+                                    img(class="slide-swiper-testimonial__img" src=`assets/img/testimonial/i-${index + 1}.jpg` alt="Client's photo" style="max-width: 100%")
                             div(class="slide-swiper-testimonial__body")
                                 h3(class="h slide-swiper-testimonial__h")= item.title
                                 p(class="p slide-swiper-testimonial__p")= item.text

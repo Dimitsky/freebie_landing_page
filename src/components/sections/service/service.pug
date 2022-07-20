@@ -6,7 +6,7 @@ section(class="service")
             div(class="service__wrapper")
                 ul(class="service__list list-service")
                     each item, index in serviceList
-                        li(class="list-service__item" style=`background: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), no-repeat center / cover url('${item.src}') #000;` + ( ( index + 1 ) > serviceVisible ? " display: none;" : "" ) )
+                        li(class="list-service__item" style=`background: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), no-repeat center / cover url('${item.src}') #000;`)
                             h3(class="h h--3 list-service__h")= item.title
                             div(class="rate list-service__rate rate-list-service")
                                 svg(class="rate__icon rate-list-service__icon" + ( item.rate >= 1 ? " rate__icon--active" : "" ) width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg")

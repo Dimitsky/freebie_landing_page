@@ -530,6 +530,7 @@ img {
   list-style: none;
 }
 .service__all {
+  display: none;
   padding: 0.971em 3.558em;
 }
 
