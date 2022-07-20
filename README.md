@@ -8,6 +8,12 @@
 2. CSS;
 3. JS.
 
+## Подход «Pixel Perfect»
+В папке img лежит файл pixelperfect.jpg для проверки
+
+## Методология БЭМ
+Все классы написаны по БЭМ
+
 ## Валидация HTML, CSS, БЭМ
 Файлы проверил [валидатором html](https://validator.w3.org/), [валидатором css](https://jigsaw.w3.org/css-validator/), и [валидатором БЭМ](https://yoksel.github.io/html-tree/)
 
